@@ -1,0 +1,85 @@
+.modal-container{
+    position: fixed;
+    top: 35%;
+    left: 40%;
+    /*transform :translate (-50%,-50%) ;        to make it in the center */
+    
+    max-width: 17rem;
+    padding: 2rem 3rem;
+    border-radius: 1.5rem;
+    background-color: #2ed573;
+    color:white;
+    border: 2px solid black;
+  }
+  .modal-container:hover{
+    border: 2px solid rgb(235, 171, 52);;
+    transition: 0.4s;
+  }
+  .modal_label{
+    font-family: monospace;
+    font-size: 1.25rem;
+    color: black;
+  }
+  .modal_input{
+    width :9rem;
+    height: 1.5rem;
+    float:right;
+    border: none;
+    border-radius: 5px;
+    margin-right: 1rem;
+  }
+  .modal_btn{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 8px 12px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: monospace;
+  }
+  .modal_btn:hover{
+    border: 2px solid orangered;
+    transition: 0.4s;
+    background: rgb(235, 122, 52);
+    background: rgb(235, 171, 52);
+    color: white;
+  }
+  .error {
+    position: absolute;
+    color : red;
+  }
+
+  @media screen and (max-width : 750px){
+    .modal-container{
+        max-width: 12rem;
+        padding: 1rem 1.5rem;
+    }
+    .modal_label{
+        font-size: 1rem;
+        font-family: monospace;
+         color: black;
+    }
+    .modal_input{
+        width :6rem;
+        height: 1rem;
+        float:right;
+        border: none;
+        border-radius: 5px;
+        margin-right: 0.75rem;
+      }
+      .modal_btn{
+        margin-top: 1rem;
+        margin-left: 1rem;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 5px 8px;
+        color: black;
+        font-size: 0.75rem;
+        font-weight: bold;
+        font-family: monospace;
+      }
+  }
+
+  
