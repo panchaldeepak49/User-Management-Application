@@ -2,89 +2,172 @@
     display: flex;
     justify-content: center;
     height: 18rem;
-    /* background: rgb(100,50,50); */
-    background-image: url('../../public/Images/background1.jpg');
-    
+    padding-top: 2rem;
 }
 .sub_form{
-    width: 30%;
-    height: 14rem;
-    margin-top: 2rem;
+   width: 26%;
+
     /* border: 2px solid black; */
     border-radius: 8px;
+    padding: 2em 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: white;
-    box-shadow: 0px 0px 10px blue;
+    /* box-shadow: 0px 0px 10px blue; */
+    box-shadow: 2px 2px 12px 3px #485460;
     
 }
-.form_field{
-    
-    border: 2px solid black;
-    border-radius: 20px;
-    width: 10rem;
-    height: 1.5rem;
-    float: right;
-    margin-right: 0.5rem; 
-    
+.form{
+    width: 80%;
 }
-.form_field:hover{
-    border: 2px solid orangered;
-    transition: 0.4s;
+.form_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
 }
- .form_label{                                        
+.input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* gap: 12px; */
+}
+.form_label{                                        
     margin-right: 1.5rem;
     font-size: 1.25rem;
     /* font-family: cursive;
     font-weight: bold; */
     
 }
-
-.btn{
-    border-radius: 20px;
-    border : 2px solid black;
-    /* height: 1.5rem; */
-    padding: 0.5rem;
-    font-weight: bold;
-    margin-left: 5.5rem;
-    margin-top: 1rem;
+.field{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-.btn:hover{
-    background: rgb(66, 141, 245);
+.form_field{
+    
+    border: 2px solid rgb(82, 81, 81);
+    border-radius: 20px;
+    width: 100%;
+    float: right;
+    padding:8px 16px;
+    line-height: 1.2em;
+    
+    
+}
+.form_field:hover{
     border: 2px solid orangered;
-    color: white;
     transition: 0.4s;
 }
- .error_message{                     /* learning of the day  */
-    position: absolute;
+
+
+.errorMessageWrapper{
+    margin-bottom: 8px;
+    height: 16px;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.error_message{                     /* learning of the day  */
+    font-size: 16px;
     color : red;
 }
 
-@media screen and (max-width : 750px){
 
-.form_field{
-    border: 1.75px solid black;
-    border-radius: 20px;
-    width: 7rem;
-    height: 1.5rem;
-    float: right;
-    margin-right: 0.5rem; 
+.buttonwrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.form_label{
-    margin-right: 1.0rem;
-    /* font-family: cursive;
-    font-weight: bold; */
-    font-size: 1rem;
-}
+
 .btn{
     border-radius: 20px;
-    border : 1px solid black;
-    /* height: 1.5rem; */
-    padding: 8px 10px;
+    border : 2px solid rgb(82, 81, 81);
+    background-color: #4a6bbd;
+    color: white;
+    font-size: 18px;
+    line-height: 1.2em;
+    padding: 0.5em 1em ;
+    width: 100%;
     font-weight: bold;
-    margin-left: 3.5rem;
-    margin-top: 1rem;
-    font-size: 0.75rem;
+    cursor: pointer;
 }
+
+
+
+@media screen and (max-width:1280px) {
+    .main_form{
+        height: 15rem;
+        /* background: red; */
+    }
+    .sub_form{
+        /* width: 32%; */
+        width : 26%;
+        /* background: green; */
+    }
+    .form{
+        width: 80%;
+        /* background-color: yellow; */
+    }
+    .form_label{                                        
+        margin-right: 1.5rem;
+        font-size: 1rem;
+    }
+    .form_field{
+        width: 90%;
+        float: right;
+        padding:8px 16px;
+        line-height: 1em;
+        /* background: cyan; */
+        
+    }
+    .errorMessageWrapper{
+        margin-bottom: 4px;
+        height: 12px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        /* background: gray; */
+    }
+    .error_message{                     /* learning of the day  */
+        font-size: 12px;
+        color : red;
+    }
+    .buttonwrapper{
+        width: 90%;
+        /* background: orangered; */
+    }
+    .btn{
+        font-size: 15px;
+    }
 }
+
+
+@media screen and (max-width:990px) {
+    .sub_form{
+        width: 44%;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .sub_form{
+        width: 80%;
+    }
+    .form{
+        width: auto;
+    }
+}
+@media screen and (max-width:420px) {
+    .sub_form{
+        width: 100%;
+    }
+
+}
+

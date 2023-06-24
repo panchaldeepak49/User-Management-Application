@@ -1,8 +1,8 @@
 .modal-container{
     position: fixed;
-    top: 35%;
+    top: 9%;
     left: 40%;
-    /*transform :translate (-50%,-50%) ;        to make it in the center */
+     /*transform :translate (50%,50%) ;       to make it in the center */
     
     max-width: 17rem;
     padding: 2rem 3rem;
@@ -51,34 +51,27 @@
     color : red;
   }
 
-  @media screen and (max-width : 750px){
+  @media screen and (max-width : 1280px){
     .modal-container{
         max-width: 12rem;
         padding: 1rem 1.5rem;
     }
     .modal_label{
         font-size: 1rem;
-        font-family: monospace;
-         color: black;
     }
     .modal_input{
-        width :6rem;
+        width :5.8rem;
         height: 1rem;
-        float:right;
-        border: none;
-        border-radius: 5px;
-        margin-right: 0.75rem;
+        
       }
       .modal_btn{
         margin-top: 1rem;
         margin-left: 1rem;
-        border: 2px solid black;
-        border-radius: 20px;
-        padding: 5px 8px;
-        color: black;
+        
         font-size: 0.75rem;
-        font-weight: bold;
-        font-family: monospace;
+      }
+      .error{
+        font-size: 0.8rem;
       }
   }
 
